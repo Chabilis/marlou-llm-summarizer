@@ -14,8 +14,9 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 app = FastAPI(
     title="Marlou's LLM Summarizer API",
-    description="Junior Web Dev Portfolio #3 Upload file → AI Summary (Groq + Llama 3.1)",
-    version="1.0"
+    description="Junior Web Dev Portfolio #3 Upload file → AI Summary (Groq + Llama 3.3)" \
+    "(Fixed new llama update 3.3 08-25-2025",
+    version="1.1"
 )
 
 @app.get("/", response_class=HTMLResponse)
