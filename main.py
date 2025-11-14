@@ -49,7 +49,7 @@ async def summarize_file(file: UploadFile = File(...)):
 
         # Call Groq LLM
         response = client.chat.completions.create(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.3-70b-versatile",
             messages=[{"role": "user", "content": f"Summarize this data clearly and professionally:\n\n{text[:10000]}"}],
             max_tokens=500
         )
